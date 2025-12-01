@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      /* Hide the preview page or default sandbox preview */
+      #preview {
+        display: none;
+      }
+
+      /* Ensure the body content is responsive */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* navigation menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        background-color: #333;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 15px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+
+      nav ul li a:hover {
+        background-color: #555;
+      }
+
+      section {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      section:target {
+        display: block;
+        opacity: 1;
+      }
+
+      #home {
+        text-align: center;
+        padding: 20px;
+      }
+
+      #home img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+      }
+
+      section h1 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      section p {
+        text-align: center;
+        padding: 0 20px;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+      }
+
+      /* Mobile responsiveness: Adjustments for smaller screens */
+      @media (max-width: 768px) {
+        nav ul li {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        #home img {
+          max-width: 100%;
+        }
+
+        section p {
+          padding: 0 10px;
+        }
+
+        section h1 {
+          font-size: 1.5em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        nav ul li {
+          font-size: 14px;
+        }
+
+        section h1 {
+          font-size: 1.2em;
+        }
+
+        section p {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#cause">Our Cause</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Welcome to Our Website</h1>
+        <p>
+          Hello! Welcome to our website. Here, you can find information about
+          us, our cause, and our CAS project in general. On this website, we
+          showcase our work progress through photos, videos, and a blog.
+        </p>
+        <img
+          src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Home Image"
+        />
+        <p>
+          Our project comprises all of the three strands: creativity, activity,
+          service. A unique idea of collecting funds for charity by having a
+          bake sale, where we will sell organic and sugar-free options, shows
+          that our project involves creativity as well as making creative
+          posters to raise awareness about environmental issues. Other than
+          creativity, we also engage in activity by planting trees and offering
+          other children the opportunity to engage in volunteering work and
+          collaboratively making change.
+        </p>
+      </section>
+
+    </main>
+
+    <script>
+      if (!window.location.hash) {
+        window.location.hash = "#home";
+      }
+    </script>
+  </body>
+</html>
+
+
+      <section id="blog">
+        <h1>Blog</h1>
+        <img
+        src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t1.15752-9/590438232_1368597288039980_8859054706094825768_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=qgbuICChDswQ7kNvwGmgZ69&_nc_oc=AdnpmU5I0waKvpAqccfREUNS1I-KiA-jr4qguOrLoRtvGaRMZ7w34atkIe66tzesRsg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&oh=03_Q7cD3wHcV5IBM9ePjPlig1SYO0zT80Zmx0q3toViJNetKR-Lsg&oe=69523080"
+        alt="Blog Image" .center { display: block; margin-left: auto;
+        margin-right: auto; width: 50%; } />
+        <p>Explore our latest blog posts.</p>
+        <ul>
+          <li><a href="#post1">Post 1 - October 5th, 2025</a></li>
+          <li><a href="#post2">Post 2 - October 15th, 2025</a></li>
+          <li><a href="#post3">Post 3 - November 1st, 2025</a></li>
+          <li><a href="#post4">Post 4 - November 9th, 2025</a></li>
+          <li><a href="#post5">Post 5 - November 10th, 2025</a></li>
+          <li><a href="#post6">Post 6 - November 30th, 2025</a></li>
+        </ul>
+      </section>
+
+      <section id="post1">
+        <h1>Blog Post 1 - October 5th</h1>
+        <p>OCTOBER 5TH, 2025.<p>
+            
+            <p>This is our first blog post! For now, we just
+          submitted our project proposal on Managebac. We met on an instagram
+          videocall and wrote everything we had in mind. At this point, the plan
+          isn't fully developed and our dates are just estimates, but this is
+          something we're really passionate about and we are planning to go to
+          our fullest. This is the plan so far:
+        </p>
+
+        <li>Submit project proposal on October 1st, 2025. Whole group task.</li>
+        <li>
+          Create a website and social media accounts to document our evidence,
+          update them regularly - Between October 15th, 2025 and November 30th,
+          2025. Website by Mariam Gabritchidze, social media by rest of the
+          group.
+        </li>
+        <li>
+          Create posters to raise awareness about environmental issues - October
+          15, 2025 to November 20th, 2025. Whole group task.
+        </li>
+        <li>
+          Organic Bake sale to raise money - November 10, 2025. Organized by
+          Liza Zghudadze, Anastasia Zghudadze, Anastasia Anastasia Beradze and
+          Nia Beradze.
+        </li>
+        <li>
+          Plant trees together - October 20th, 2025 to November 30th, 2025.
+          Whole team task.
+        </li>
+        <li>
+          Reach out and collaborate with a charity organization and collaborate
+          with environmental organizations to allow us to plan trees - October
+          20th, 2025 to November 30th, 2025. Whole group task.
+        </li>
+        <li>
+          Final reflection and evaluation - December 1st, 2025. Whole group
+          task, individual submissions
+        </li>
+
+        <p>
+          This project is something new for all of us. We are all looking
+          forward to working together and gaining all the experience we can, as
+          well as making an actual difference in our community,
+        </p>
+      </section>
+
+      <section id="post2">
+        <h1>Blog Post 2 - October 15th</h1>
+        <p>OCTOBER 15TH, 2025.<p>
+            <p>We recently finished creating a new series of educational posters! They're about Georgia's enviromental pollution.  We also decided on a straightforward logo that captures our project's idea without detracting from the content in order to bring everything together. The project feels polished and ready to share now that the posters and logo are finished!
+        </p>
+        <img src="https://www.simpleimageresizer.com/_uploads/photos/3af9d804/564046200_1221256033161979_6782077336832356967_n_4_25.jpg" alt="Poster 1" class="align-right">
+      </section>
+
+      <section id="post3">
+        <h1>Blog Post 3 - November 1st, 2025</h1>
+        <p>To make our surroundings healthier and greener, our community came together on November 1st for a tree-planting event that united people of all ages.</p>  
+        <img src="https://www.simpleimageresizer.com/_uploads/photos/38ba9936/591217711_1199927718769160_810215374273548376_n_1_33.png" alt="collage bp3">
+        <p>In parks and along sidewalks we planted a variety of young trees. The day felt fun despite the physical labor.  We learned how trees promote cleaner soil and air,  bonded, and everyone felt proud of their contributions to something that will continue to grow for many years to come. Even though our new trees are small right now, they signify a positive beginning and serve as a reminder of what can be accomplished when we collaborate to protect the environment.</p>
+</section> 
+
+<section id="post4">
+  <h1>Blog Post 4 - November 9th, 2025</h1>
+  <p>We are thrilled to announce that on November 9th, we will have a charity bake sale with homemade, sugar-free, organic treats!  In addition to enjoying tasty, healthful desserts, all sales will benefit [insert charity name], helping those in need.
+
+   <h2> What We're Baking</h2>
+   
+   <p> A range of sweets will be available, such as:</p>
+   
+   <li> Carrot cake;</li> 
+   <li>Tiramisu;</li>
+   <li> Sugar free muffins;</li>
+    <li>  Brownies Without Grain;</li> 
+<li>  Organic ingredients are used to make all of the treats, and natural sweeteners like stevia and fruit are used.</li>
+<img src="https://www.simpleimageresizer.com/_uploads/photos/38ba9936/593127729_1501431324495477_6540154181575010880_n_40.png" alt="Bake sale">
+
+    <h3>Participate<h3>
+   
+   <p>Do you want to assist?  You can help by coming by and making a purchase! Bring friends as well.</p>  
+ 
+</section> 
+
+<section id="post5">
+  <h1>Blog Post 5 - November 10th, 2025</h1>
+  <p>November 10th, 2025.<p>
+      <p>We are incredibly grateful to everyone who came to our November 10th charity bake sale!  We were able to raise money to support our cause because of your kindness.<p>
+        <img src="https://www.simpleimageresizer.com/_uploads/photos/38ba9936/589931648_1600367654713413_7148135826753270165_n_2_50.png" alt="bake sale2">
+        <p>Everyone who came by and spread the word has our sincere gratitude.  Your assistance was crucial!</p>
+  
+</section>
+
+<section id="post6">
+  <h1>Blog Post 6 - November 30th, 2025</h1>
+  <p>November 30th, 2025.<p>
+      <p>The last blog post. We learned a lot from our environmental campaign.  We concentrated on important topics like recycling and volunteering and it was wonderful to see our community participate.</p>
+      <img src="https://img.freepik.com/free-vector/thank-you-lettering_1262-6963.jpg?semt=ais_hybrid&w=740&q=80" alt="Thank you">
+
+       <p>The campaign demonstrated how small actions, like using less plastic or conserving energy, can have a significant impact when everyone takes part.  I hope our efforts inspire others to make more sustainable decisions in their daily lives. It was encouraging to see how group action can bring about positive change.</p>
+  
+</section>
+
+      <section id="about">
+        <h1>About Us</h1>
+        <p>
+          Our names are Mariam, Liza, Nia, Anastasia and Taso. We are a tight
+          knit friend group and stuents of the European school. We are passionate about enviromental causes, as we all grew up in 
+        </p>
+        <p>We think that as students, we have a distinct viewpoint on the problems that our globe faces. Growing up in a time of environmental change, our generation feels a strong feeling of obligation to help find solutions. We're committed to using our voices, energies, and actions to drive change, whether it's combating pollution, advancing biodiversity, or supporting renewable energy initiatives.</P>
+        <h2>Our mission<h2>
+          <p>What is our mission?
+            Our goal is to spread awareness of environmental issues in a way that is enjoyable, thorough, and results in actual change.  The project includes action, volunteering, fundraising, and educational awareness content.   We want to do everything in our power to create a sustainable and eco-friendly future because we understand how important it is.  But we also acknowledge that different people have different opinions and beliefs,  one of our objectives is to inform our community about the risks associated with pollution, deforestation, and climate change while providing them with opportunities to lead more sustainable lives.
+          </p>
+ <p>Through volunteering, fundraising, and instructional materials, we hope to have a real influence while maintaining an upbeat and inspiring attitude. We acknowledge that environmental concerns can seem overwhelming, but we firmly think that modest, daily efforts can have a big impact.</p>
+      </section>
+     
+     
+      <section id="cause">
+        <h1>Our Cause</h1>
+        <p>
+          Our cause is about protecting the enviromental integrity of Georgia
+          and promoting it's biodiversity.</p>
+
+          <h2>Environmental Facts About Georgia</h2>
+          <h3>Fun Environmental Facts</h3>
+          <ul>
+            <li><strong>Biodiversity Hotspot</strong>: Georgia is home to over 4,000 plant species and 300 bird species. The country is a biodiversity hotspot because of its variety of ecosystems, including the Caucasus Mountains.</li>  
+            <img src="https://www.simpleimageresizer.com/_uploads/photos/f68af7d8/unesco-heritage-georgia_33.webp" alt="mountain">
+            <li><strong>National Parks and Protected Areas</strong>: About 8% of Georgia's land is protected. This includes areas like Tusheti National Park, which is one of the most pristine regions in the country.</li>  
+            <li><strong>Vineyard Tradition</strong>: Georgia is considered the birthplace of wine. Its winemaking history spans over 8,000 years.</li>  
+            <img src="https://www.simpleimageresizer.com/_uploads/photos/f68af7d8/wineries-in-georgia_33.jpg" alt="Wine">
+            <li><strong>Sustainable Hydroelectric Potential</strong>: Georgia has significant potential for renewable energy, particularly hydropower, due to its mountainous terrain.</li>  
+            <img src="https://www.simpleimageresizer.com/_uploads/photos/f68af7d8/427772228_816979633802052_8927432649931917694_n_2_28.jpg" alt="Hydroelectricz">
+          </ul>
+         
+
+          <h3>Pollution Issues in Georgia</h3>
+          <ul>
+              <li><strong>Air Pollution</strong>: Tbilisi, the capital, suffers from high air pollution, largely due to vehicle emissions and industrial activity.</li>
+              <li><strong>Water Pollution</strong>: Rivers like the Rioni River are contaminated by agricultural runoff, untreated sewage, and industrial waste.</li>
+              <li><strong>Waste Management</strong>: Georgia faces a growing waste management problem, with limited recycling and reliance on landfills for waste disposal.</li>
+              <li><strong>Deforestation</strong>: Logging and agricultural expansion have led to significant deforestation, particularly in the Caucasus Mountains.</li>
+        
+         <h3>Solutions for a Greener Georgia</h3>
+          <ul>
+              <li><strong>Promote Renewable Energy</strong>: Expanding solar and wind energy could help Georgia reduce its reliance on fossil fuels.</li>
+              <li><strong>Improved Public Transport and Green Infrastructure</strong>: Developing efficient public transport and encouraging electric vehicles can help reduce air pollution in urban areas.</li>
+              <li><strong>Waste Management and Recycling Programs</strong>: Introducing better waste collection and recycling systems would reduce pollution and support a circular economy.</li>
+              <li><strong>Forest Conservation and Reforestation</strong>: Stronger regulations and reforestation projects can help restore degraded lands and protect biodiversity.</li>
+              <li><strong>Stronger Environmental Regulations</strong>: Enforcing pollution control measures in industries and improving waste treatment can protect air and water quality.</li>
+              <li><strong>Eco-Tourism Development</strong>: Promoting eco-tourism would help preserve Georgia's natural beauty and raise awareness about environmental issues.</li>
+            </ul><img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t1.15752-9/589794095_1241241037847721_7676506326681545391_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=GmJcLzCgONEQ7kNvwFfeiNL&_nc_oc=AdlIZGGcOuxeyRpbJm4lSmkvom_r_SqPdecxmLI_gE7Yd7jWE7FIdelwzA-hV8ZIvXE&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&oh=03_Q7cD3wGMJHSXDhOO5Vc5bu5B1-74kWjmiV-11RnrpE3VJcUMNA&oe=6953F3EF" alt="infographic">
+          </ul>
+          </ul>
+      
+          <p>By focusing on these efforts, we hope to make a positive change in Georgia and create a sustainable future for its people and natural ecosystems.</p>
+          <h3>Sources</h3>
+          <ul>
+              <li><strong>World Health Organization (WHO)</strong> - Air pollution data and health risks in Georgia.</li>
+              <li><strong>United Nations Development Programme (UNDP)</strong> - Reports on environmental challenges in Georgia.</li>
+              <li><strong>World Bank</strong> - Water pollution and energy resources data for Georgia.</li>
+              <li><strong>Caucasus Nature Fund (CNF)</strong> - Biodiversity and protected areas in Georgia.</li>
+          </ul>
+        </section>
+      </section>
+
+    </main>
+  </body>
+</html>

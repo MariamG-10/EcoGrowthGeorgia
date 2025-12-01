@@ -1,0 +1,176 @@
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f8f6;
+  color: #333;
+  line-height: 1.6;
+  transition: background 0.3s ease;
+}
+
+header {
+  background: #6d7b63;
+  padding: 14px 0;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background: #55624f;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 20px 80px;
+}
+
+section,
+#home {
+  background: #fff;
+  padding: 35px 40px;
+  margin: 16px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover,
+#home:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  display: none;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  max-width: 850px;
+}
+
+section:target {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section:target ~ #home {
+  display: none;
+}
+
+section h1 {
+  color: #6d7b63;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+section p {
+  line-height: 1.8;
+  color: #555;
+  font-size: 18px;
+}
+
+#blog ul {
+  list-style: none;
+  padding: 0;
+}
+
+#blog li {
+  margin: 12px 0;
+}
+
+#blog a {
+  color: #3c4b37;
+  font-size: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+#blog a:hover {
+  background: #e1e7dc;
+  color: #4a5a47;
+}
+
+[id^="post"] {
+  padding: 45px 50px;
+  max-width: 800px;
+  font-size: 18px;
+  line-height: 1.85;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+[id^="post"] h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #5b6e58;
+}
+
+[id^="post"] p {
+  margin-bottom: 22px;
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  display: block;
+  margin: 25px 0;
+}
+
+footer {
+  background: #4a5a47;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+footer:hover {
+  background: #55624f;
+}
+window.onload = function () {
+  // Show the content after a 2-second delay
+  setTimeout(function () {
+      document.body.style.display = "block"; // Display the body content
+  }, 2000); // Delay in milliseconds
+};
+</script>
+</body>
+</html>
